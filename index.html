@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SafeHer - Emergency</title>
+
+    <link rel="stylesheet" href="design.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= EMERGENCY PAGE ================= -->
+
+<div id="emergencyPage" class="page">
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            Safe<span>Her</span>
+        </div>
+
+        <div class="status">
+            ● Safety Center
+        </div>
+
+    </header>
+
+
+    <!-- Main Emergency Section -->
+    <main>
+
+        <section class="emergency-hero">
+
+            <div class="hero-text">
+
+                <p class="label">
+                    CASE OF EMERGENCY
+                </p>
+
+                <h1>
+                    Stay Calm.<br>
+                    <span>Get Help Fast.</span>
+                </h1>
+
+                <p>
+                    Use the emergency SOS button or contact
+                    someone you trust when you need immediate help.
+                </p>
+
+
+                <!-- Emergency Call -->
+                <a href="tel:999"
+                   id="call999"
+                   class="police-button">
+
+                    🚓 Call Emergency 999
+
+                </a>
+
+            </div>
+
+
+            <!-- SOS Area -->
+            <div class="sos-area">
+
+                <div class="pulse pulse-one"></div>
+                <div class="pulse pulse-two"></div>
+
+                <button id="sosButton"
+                        class="sos-button">
+
+                    <span>SOS</span>
+
+                    <small>
+                        EMERGENCY
+                    </small>
+
+                </button>
+
+                <p>
+                    Press for immediate help
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT BUTTON ================= -->
+
+        <section class="contact-entry">
+
+            <div>
+
+                <p class="label">
+                    YOUR SAFETY NETWORK
+                </p>
+
+                <h2>
+                    Emergency Contacts
+                </h2>
+
+                <p>
+                    Keep your trusted people one tap away.
+                </p>
+
+            </div>
+
+
+            <button id="openContacts"
+                    class="contact-button">
+
+                Manage Emergency Contacts
+                <span>→</span>
+
+            </button>
+
+        </section>
+
+
+
+        <!-- ================= QUICK INFO ================= -->
+
+        <section class="quick-info">
+
+
+            <!-- Emergency SOS -->
+            <div class="info-card" id="emergencySOS">
+
+                <div class="info-icon">
+                    🚨
+                </div>
+
+                <h3>Emergency SOS</h3>
+
+                <p>
+                    Quickly activate an emergency alert.
+                </p>
+
+            </div>
+
+
+            <!-- Emergency 999 -->
+            <div class="info-card" id="call999Card">
+
+                <div class="info-icon">
+                    📞
+                </div>
+
+                <h3>Emergency 999</h3>
+
+                <p>
+                    Call Bangladesh emergency service.
+                </p>
+
+            </div>
+
+
+            <!-- Trusted Contacts -->
+            <div class="info-card" id="trustedContacts">
+
+                <div class="info-icon">
+                    👥
+                </div>
+
+                <h3>Trusted Contacts</h3>
+
+                <p>
+                    Contact your family and trusted people.
+                </p>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+
+<!-- ================= CONTACT PAGE ================= -->
+
+<div id="contactPage" class="page hidden">
+
+    <header>
+
+        <button id="backButton"
+                class="back-button">
+
+            ← Back
+
+        </button>
+
+
+        <div class="logo">
+            Safe<span>Her</span>
+        </div>
+
+    </header>
+
+
+    <main class="contacts-main">
+
+
+        <div class="contacts-heading">
+
+            <p class="label">
+                YOUR TRUSTED PEOPLE
+            </p>
+
+            <h1>
+                Emergency <span>Contacts</span>
+            </h1>
+
+            <p>
+                Add people you can trust during an emergency.
+            </p>
+
+        </div>
+
+
+        <!-- Add Contact -->
+        <button id="addContact"
+                class="add-button">
+
+            + Add Emergency Contact
+
+        </button>
+
+
+        <!-- Contact Cards -->
+        <div id="contactList"
+             class="contact-list">
+
+        </div>
+
+    </main>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

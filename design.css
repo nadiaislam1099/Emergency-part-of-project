@@ -1,0 +1,703 @@
+/* ================= BASIC ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #faf7ff;
+    color: #29143d;
+}
+
+
+/* ================= PAGE ================= */
+
+.page {
+    min-height: 100vh;
+
+    animation: pageShow 0.5s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes pageShow {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 72px;
+
+    padding: 0 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: white;
+
+    box-shadow: 0 4px 20px rgba(70, 30, 100, 0.08);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6d28d9;
+}
+
+.logo span {
+    color: #c026d3;
+}
+
+.status {
+    color: #7c3aed;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* ================= HERO ================= */
+
+.emergency-hero {
+
+    min-height: 540px;
+
+    padding: 60px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background:
+        radial-gradient(
+            circle at 80% 50%,
+            #eadcff,
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #f7efff,
+            #ffffff
+        );
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.label {
+    color: #8b5cf6;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.hero-text h1 {
+
+    font-size: 55px;
+
+    line-height: 1.05;
+
+    margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+    color: #8b5cf6;
+}
+
+.hero-text > p:not(.label) {
+
+    color: #75657e;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+
+    margin-bottom: 30px;
+}
+
+
+/* ================= 999 BUTTON ================= */
+
+.police-button {
+
+    display: inline-block;
+
+    padding: 14px 22px;
+
+    border-radius: 10px;
+
+    background: #28143d;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.police-button:hover {
+
+    background: #4c2670;
+
+    transform: translateY(-3px);
+}
+
+
+/* ================= SOS ================= */
+
+.sos-area {
+
+    position: relative;
+
+    width: 320px;
+    height: 350px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.sos-button {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 205px;
+    height: 205px;
+
+    border-radius: 50%;
+
+    border: 10px solid white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #7c3aed,
+            #c026d3
+        );
+
+    color: white;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 0 8px #e8dcff,
+        0 20px 45px
+        rgba(124, 58, 237, 0.35);
+
+    transition: 0.3s;
+}
+
+.sos-button:hover {
+
+    transform: scale(1.06);
+
+    box-shadow:
+        0 0 0 10px #dfcfff,
+        0 25px 50px
+        rgba(124, 58, 237, 0.4);
+}
+
+.sos-button span {
+
+    display: block;
+
+    font-size: 50px;
+
+    font-weight: bold;
+}
+
+.sos-button small {
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+
+.sos-area > p {
+
+    margin-top: 25px;
+
+    color: #806d8a;
+
+    font-size: 13px;
+}
+
+
+/* SOS animation */
+
+.pulse {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    border: 2px solid #b99bea;
+
+    animation: pulse 2.5s infinite;
+}
+
+.pulse-one {
+
+    width: 230px;
+    height: 230px;
+}
+
+.pulse-two {
+
+    width: 285px;
+    height: 285px;
+
+    animation-delay: 0.8s;
+}
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.15);
+        opacity: 0;
+    }
+}
+
+
+/* ================= CONTACT ENTRY ================= */
+
+.contact-entry {
+
+    padding: 50px 10%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: white;
+
+    border-top: 1px solid #eee6f7;
+}
+
+
+.contact-entry h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 8px;
+}
+
+.contact-entry p:not(.label) {
+
+    color: #7b6b83;
+}
+
+
+.contact-button {
+
+    padding: 15px 22px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background: #7c3aed;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+
+    background: #5b21b6;
+
+    transform: translateX(5px);
+}
+
+.contact-button span {
+
+    margin-left: 10px;
+}
+
+
+/* ================= QUICK INFO ================= */
+
+.quick-info {
+
+    padding: 50px 10%;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    background: #faf7ff;
+}
+
+.info-card {
+
+    width: 280px;
+
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 16px;
+
+    border: 1px solid #eadcff;
+
+    box-shadow:
+        0 8px 25px
+        rgba(80, 40, 120, 0.07);
+
+    transition: 0.3s;
+}
+
+.info-card:hover {
+
+    transform: translateY(-7px);
+}
+
+.info-icon {
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+
+    margin-bottom: 10px;
+}
+
+.info-card p {
+
+    color: #7c6d83;
+
+    line-height: 1.5;
+
+    font-size: 14px;
+}
+
+
+/* ================= CONTACT PAGE ================= */
+
+.contacts-main {
+
+    min-height: calc(100vh - 72px);
+
+    padding: 70px 10%;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            #eee2ff,
+            transparent 30%
+        ),
+        #faf7ff;
+}
+
+
+.contacts-heading h1 {
+
+    font-size: 48px;
+
+    margin-bottom: 12px;
+}
+
+.contacts-heading h1 span {
+
+    color: #8b5cf6;
+}
+
+.contacts-heading p:last-child {
+
+    color: #776781;
+}
+
+
+/* ================= ADD BUTTON ================= */
+
+.add-button {
+
+    margin: 35px 0;
+
+    padding: 15px 25px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background: #7c3aed;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.add-button:hover {
+
+    background: #5b21b6;
+
+    transform: translateY(-3px);
+}
+
+
+/* ================= CONTACT CARDS ================= */
+
+.contact-list {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.contact-card {
+
+    width: 280px;
+
+    padding: 28px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    border: 1px solid #eadcff;
+
+    box-shadow:
+        0 10px 30px
+        rgba(80, 40, 120, 0.08);
+
+    animation: cardShow 0.5s ease;
+
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 35px
+        rgba(80, 40, 120, 0.14);
+}
+
+@keyframes cardShow {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.contact-icon {
+
+    width: 62px;
+    height: 62px;
+
+    margin: auto;
+
+    margin-bottom: 15px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #eee5ff;
+
+    font-size: 27px;
+}
+
+
+.contact-card h3 {
+
+    margin-bottom: 8px;
+}
+
+.relationship {
+
+    color: #8b5cf6;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.contact-card p {
+
+    color: #796a82;
+
+    margin: 8px 0 20px;
+}
+
+
+/* ================= CONTACT BUTTONS ================= */
+
+.call-btn,
+.edit-btn,
+.delete-btn {
+
+    padding: 9px 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+.call-btn {
+
+    background: #7c3aed;
+
+    color: white;
+}
+
+.edit-btn {
+
+    background: #ede9fe;
+
+    color: #5b21b6;
+
+    margin-left: 4px;
+}
+
+.delete-btn {
+
+    background: #f1edf3;
+
+    color: #594c61;
+
+    margin-left: 4px;
+}
+
+
+/* ================= BACK ================= */
+
+.back-button {
+
+    border: none;
+
+    background: transparent;
+
+    color: #6d28d9;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 750px) {
+
+    .emergency-hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 50px;
+    }
+
+    .hero-text h1 {
+
+        font-size: 42px;
+    }
+
+    .contact-entry {
+
+        flex-direction: column;
+
+        gap: 25px;
+
+        text-align: center;
+    }
+
+    .quick-info {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .contacts-heading h1 {
+
+        font-size: 38px;
+    }
+
+}
